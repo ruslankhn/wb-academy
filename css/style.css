@@ -1369,6 +1369,9 @@ ol li, ul li {
 .wb-article_sidebar-news-item-bottom-link:hover > .wb-article_sidebar-news-item-bottom-link-arrow {
     background-position: 14px center;
 }
+.wb-article_sidebar-desktop {
+    display: none;
+}
 @media (min-width: 768px) {
     .wb-article_content-top {
         gap: 16px;
@@ -1415,6 +1418,7 @@ ol li, ul li {
         width: 100%;
     }
     .wb-article_sidebar-desktop {
+        display: block;
         margin-bottom: 40px;
         padding: 24px;
         background-color: var(--color-white);
