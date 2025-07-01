@@ -391,6 +391,9 @@ p {
         font-size: 24px;
         line-height: 28px;
     }
+    .wb-hero_bg-icons {
+        transform: translateX(-54%);
+    }
     .wb-hero_bg-icon-btc, .wb-hero_bg-icon-mic {
         display: block;
     }
@@ -398,12 +401,13 @@ p {
         position: absolute;
         top: -58px;
         left: 50%;
-        transform: translateX(-312%) rotate(-68deg);
+        transform: translateX(-253%) rotate(-12deg);
     }
     .wb-hero_bg-icon-mic {
         position: absolute;
         bottom: 0;
-        left: 0;
+        left: 50%;
+        transform: translateX(-165%);
         z-index: 1;
     }
     .tooltip-box {
@@ -422,7 +426,18 @@ p {
         height: 120px;
     }
 }
-
+@media (min-width: 1440px) {
+    .wb-hero_bg-icons {
+        transform: translateX(-50%);
+    }
+    .wb-hero_bg-icon-btc {
+        transform: translateX(-312%) rotate(-68deg);
+    }
+    .wb-hero_bg-icon-mic {
+        left: 0;
+        transform: translate(0);
+    }
+}
 /* RELEASES */
 .wb-releases {
     padding: 32px 16px 64px;
@@ -733,6 +748,7 @@ p {
     width: 100%;
     margin-top: 12px;
     padding: 20px 0;
+    border: unset;
     border-radius: 8px;
     font-weight: 700;
     font-size: 24px;
