@@ -263,6 +263,9 @@ p {
     text-align: center;
     color: var(--color-white);
 }
+.wb-hero_bg-icon-btc, .wb-hero_bg-icon-mic {
+    display: none;
+}
 .tooltip-container {
   position: absolute;
   z-index: 9999;
@@ -379,6 +382,7 @@ p {
     }
     .wb-hero_content-logo {
         max-width: 858px;
+        z-index: 1;
     }
     .wb-hero_content-title {
         font-size: 42px;
@@ -386,6 +390,21 @@ p {
     .wb-hero_content-subtitle {
         font-size: 24px;
         line-height: 28px;
+    }
+    .wb-hero_bg-icon-btc, .wb-hero_bg-icon-mic {
+        display: block;
+    }
+    .wb-hero_bg-icon-btc {
+        position: absolute;
+        top: -58px;
+        left: 50%;
+        transform: translateX(-312%) rotate(-68deg);
+    }
+    .wb-hero_bg-icon-mic {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
     }
     .tooltip-box {
         width: 264px;
@@ -771,6 +790,7 @@ p {
     border-radius: 16px;
     padding: 32px 24px 298px;
     background-color: #E4E9E5;
+    overflow: hidden;
 }
 .wb-more_content::before {
     content: "";
