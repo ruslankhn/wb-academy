@@ -433,8 +433,9 @@ p {
         transform: translateX(-50%);
     }
     .wb-hero_bg-icon-btc {
-        transform: translateX(-312%) rotate(-68deg);
+        top: -58px;
         max-width: unset;
+        transform: translateX(-312%) rotate(-68deg);
     }
     .wb-hero_bg-icon-mic {
         left: 0;
