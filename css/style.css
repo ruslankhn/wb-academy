@@ -1224,6 +1224,11 @@ p {
     height: 100%;
     border: 0;
 }
+.wb-article_youtube-description {
+    padding: 10px 16px 0;    
+    background-color: var(--color-white);
+    color: var(--color-text-secondary);
+}
 .wb-article_share {
     display: flex;
     flex-direction: column;
@@ -1439,7 +1444,10 @@ ol li, ul li {
         width: 31%;
     }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1200px) {    
+    .wb-article_youtube-description {
+        padding: 10px 32px 0;
+    }
     .wb-article_inner {
         padding: 32px;
     }
