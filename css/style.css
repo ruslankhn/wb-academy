@@ -1273,6 +1273,12 @@ p {
 [data-share="telegram"]:hover svg path {
     fill: #24A1DE;
 }
+[data-share="vk"]:hover svg path {
+    fill: #0077FF;
+}
+[data-share="dzen"]:hover svg path:first-child {
+    fill: #2C3036;
+}
 .wb-article_inner {
     padding: 0 16px 16px;
     background-color: var(--color-white);
